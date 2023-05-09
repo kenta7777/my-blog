@@ -16,3 +16,19 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown a:visited {
+  color: #0b0080;
+}
+
+.markdown a:hover {
+  color: #06e;
+}
+
+.markdown a:active {
+  color: #faa700;
+}
+
+.markdown a:focus {
+  outline: thin dotted;
+}
