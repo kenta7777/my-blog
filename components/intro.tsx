@@ -1,4 +1,4 @@
-import { CMS_NAME } from '../lib/constants'
+import Link from 'next/link'
 
 const Intro = () => {
   return (
@@ -6,6 +6,9 @@ const Intro = () => {
       <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         Kenta7777
       </h1>
+      <Link href="/links" className="hover:underline">
+        Links
+      </Link>
     </section>
   )
 }
