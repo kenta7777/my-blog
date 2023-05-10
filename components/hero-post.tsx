@@ -1,5 +1,4 @@
 import DateFormatter from './date-formatter'
-import CoverImage from './cover-image'
 import Link from 'next/link'
 
 type Props = {
@@ -18,7 +17,7 @@ const HeroPost = ({
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        Latest Story
+        Latest Post
       </h2>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
