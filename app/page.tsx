@@ -42,6 +42,10 @@ async function getData() {
     'excerpt',
   ])
 
+  return convertToPosts(allItems)
+}
+
+const convertToPosts = (allItems) => {
   const posts: Post[] = []
   allItems.map((item) =>{
     const post: Post = {
