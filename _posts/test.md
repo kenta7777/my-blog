@@ -1,10 +1,7 @@
 ---
 title: 'Next.js+TypeScriptでブログ作ってみた'
 excerpt: 'Next.js+TypeScriptでブログを作って、Vercelにデプロイした'
-coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2023-05-09T15:25:00.000Z'
-ogImage:
-  url: '/assets/blog/hello-world/cover.jpg'
 ---
 
 勉強のため、Next.js+TypeScript でブログを実装し、Vercel を使って公開してみた（この記事はテスト投稿の一環）。

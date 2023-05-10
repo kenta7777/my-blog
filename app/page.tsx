@@ -21,7 +21,6 @@ export default async function Page() {
         {heroPost && (
           <HeroPost
             title={heroPost.title}
-            coverImage={heroPost.coverImage}
             date={heroPost.date}
             slug={heroPost.slug}
             excerpt={heroPost.excerpt}
@@ -38,7 +37,6 @@ async function getData() {
     'title',
     'date',
     'slug',
-    'coverImage',
     'excerpt',
   ])
 
@@ -52,13 +50,8 @@ const convertToPosts = (allItems) => {
       slug: item['slug'],
       title: item['title'],
       date: item['date'],
-      coverImage: item['coverImage'],
       excerpt: item['excerpt'],
       content: item['content'],
-      //TODO: remove
-      ogImage: {
-        url: ''
-      }
     }
     posts.push(post)
   })

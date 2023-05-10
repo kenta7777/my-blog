@@ -33,11 +33,9 @@ export default function Post({ post }: Props) {
             <article className="mb-32">
               <Head>
                 <title>{title}</title>
-                <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader
                 title={post.title}
-                coverImage={post.coverImage}
                 date={post.date}
               />
               <PostBody content={post.content} />
