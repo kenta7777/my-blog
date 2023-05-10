@@ -1,4 +1,6 @@
-import { useRouter } from "next/router";
+'use client';
+
+import { useRouter } from "next/navigation";
 import React from "react";
 import Header from "../../components/header";
 import Layout from "../../components/layout";
@@ -11,20 +13,20 @@ export default function Links() {
   ];
   return (
     <Layout>
-      <Header children={<h3>Links</h3>} />
-      {router.isFallback ? (
-        <>Loading…</>
-      ) : (
-          <>
-            <ul>
-                {links.map((link, index) => 
-                  <li key={index}> 
+      <Header children={<h2>Links</h2>} />
+      {
+        <>
+          <ul>
+              {links.map((link, index) => 
+                <li key={index}> 
+                  <div>
                     <a className="hover:underline" rel="noreferrer" target="_blank" href={link.url}>{link.name}</a>
-                  </li>
-                )}
-            </ul>
-          </>
-      )}
+                  </div>
+                </li>
+              )}
+          </ul>
+        </>
+      }
     </Layout>
   );
 }
