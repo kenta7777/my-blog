@@ -15,18 +15,18 @@ export default function About() {
     <Layout>
       <Header children={<h2>About</h2>} />
       <Container>
-        <h2 className="mb-4 text-4xl lg:text-5xl leading-tight">Me</h2>
+        <h2 className="text-4xl lg:text-5xl leading-tight">Me</h2>
           <div className="content-box">
             A software engineer.
           </div>
-        <h2 className="mb-4 text-4xl lg:text-5xl leading-tight">Main Interests</h2>
+        <h2 className="text-4xl lg:text-5xl leading-tight">Main Interests</h2>
           <div className="content-box">
             <ul>
               <li>Rust</li>
               <li>Type System</li>
             </ul>
           </div>
-          <h2 className="mb-4 text-4xl lg:text-5xl leading-tight">Links</h2>
+          <h2 className="text-4xl lg:text-5xl leading-tight">Links</h2>
             <div className="content-box">
               <ul>
                 {links.map((link, index) => 
