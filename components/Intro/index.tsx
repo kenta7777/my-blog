@@ -11,9 +11,6 @@ const Intro = () => {
         <Link href="/about" className="hover:underline">
           About
         </Link>
-        <Link href="/links" className="hover:underline">
-          Links
-        </Link>
       </div>
     </section>
   )
