@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import './index.css';
 
 const Intro = () => {
   return (
@@ -6,9 +7,11 @@ const Intro = () => {
       <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         Kenta7777
       </h1>
-      <Link href="/links" className="hover:underline">
-        Links
-      </Link>
+      <div className="link-box">
+        <Link href="/about" className="hover:underline">
+          About
+        </Link>
+      </div>
     </section>
   )
 }
