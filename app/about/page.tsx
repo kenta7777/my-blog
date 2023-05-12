@@ -32,7 +32,7 @@ export default function About() {
                 {links.map((link, index) => 
                   <li key={index}> 
                     <div>
-                      <a className="hover:underline" rel="noreferrer" target="_blank" href={link.url}>{link.name}</a>
+                      <a rel="noreferrer" target="_blank" href={link.url}>{link.name}</a>
                     </div>
                   </li>
                 )}
