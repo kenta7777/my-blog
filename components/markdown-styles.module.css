@@ -3,10 +3,57 @@
 }
 
 .markdown p,
-.markdown ul,
-.markdown ol,
 .markdown blockquote {
   @apply my-6;
+}
+
+.markdown ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 12px;
+  list-style-position: inside;
+  list-style: disc;
+}
+
+.markdown ol {
+  list-style: decimal;
+}
+
+.markdown code {
+  display: inline-block;
+  padding: 0.1em 0.25em;
+  color: #444;
+  background-color: #e7edf3;
+  border-radius: 3px;
+  border: solid 1px #d6dde4;
+}
+
+.markdown p a {
+  color: blue;
+}
+
+.markdown a {
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.markdown blockquote blockquote {
+  margin-left: 20px;
+  border-left: 5px dashed #FFCC66;
+}
+
+.markdown h1 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h2 {
@@ -15,20 +62,4 @@
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
-}
-
-.markdown a:visited {
-  color: #0b0080;
-}
-
-.markdown a:hover {
-  color: #06e;
-}
-
-.markdown a:active {
-  color: #faa700;
-}
-
-.markdown a:focus {
-  outline: thin dotted;
 }
