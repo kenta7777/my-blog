@@ -9,7 +9,7 @@ date: '2023-05-09T15:25:00.000Z'
 ## ブログ実装
 
 Next.js の[Blog Starter Kit](https://vercel.com/templates/next.js/blog-starter-kit)を基にしている。
-不要な部分を削除し、ブログトップのヘッダーからリンク集に飛べるようにしただけ
+不要な部分を削除し、About画面に飛べるリンクをヘッダーに置いただけ。
 
 ## Vercelへのデプロイ
 
